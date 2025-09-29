@@ -1,0 +1,12 @@
+name: Run multiline command
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print multiline
+        run: |
+          echo "Hello from 1st"
+          echo "Hi from 2nd"
+      - name: Print Good by
+        run: echo "Good bye"
